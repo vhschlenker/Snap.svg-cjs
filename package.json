@@ -1,8 +1,9 @@
 {
   "name": "snapsvg-cjs",
   "version": "0.0.6",
-  "description": "SnapSVG in CommonJS format, works out-of-the-box with Webpack",
+  "description": "SnapSVG in CommonJS format with added types, works out-of-the-box with Webpack",
   "main": "dist/snap.svg-cjs.js",
+  "types": "../@types/snapsvg",
   "scripts": {
     "build": "gulp && webpack dist/snap.svg-cjs.js --output-file=dist/snap.svg.js",
     "start": "superstatic",
@@ -11,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geelen/Snap.svg-cjs.git"
+    "url": "git+https://github.com/vhschlenker/Snap.svg-cjs.git"
   },
   "keywords": [
     "snapsvg",
@@ -21,10 +22,11 @@
   "author": "Glen Maddern",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/geelen/Snap.svg-cjs/issues"
+    "url": "https://github.com/vhschlenker/Snap.svg-cjs/issues"
   },
-  "homepage": "https://github.com/geelen/Snap.svg-cjs#readme",
+  "homepage": "https://github.com/vhschlenker/Snap.svg-cjs#readme",
   "dependencies": {
+    "@types/snapsvg": "0.4.31",
     "snapsvg": "0.5.1"
   },
   "peerDependencies": {
